@@ -552,3 +552,17 @@ Ours            | 52s        | 6.4         | 28.9G
 
 #### S5: Error Analysis
 [Detailed failure case analysis]
+
+---
+
+## Research Workflow
+
+# Compact Research Workflow: U-Net + Mamba Hybrid
+
+Our research followed a systematic approach to develop the MKPE Contour-Aware Mamba UNet architecture. The workflow began with **Research Initiation** and comprehensive **Dataset Preparation**, where we selected and preprocessed the Kvasir and PolypGen datasets with appropriate data augmentation techniques. We then conducted extensive **Baseline Evaluation** by implementing and testing multiple state-of-the-art models including U-Net, ResU-Net++, Attention U-Net, PraNet, Mamba-UNet, TransUNet, and Polyp-PVT to establish performance benchmarks. 
+
+The core innovation phase involved **Component Integration**, where we systematically integrated memory optimization techniques, Multi-Kernel Positional Embedding (MKPE), and contour-aware enhancement mechanisms. This led to our **Architecture Decision** to select Mamba-UNet as the base framework, specifically choosing Mamba blocks for the U-Net bottleneck due to their superior memory efficiency and linear complexity scaling.
+
+The development phase included iterative **Training and Validation** cycles with hyperparameter tuning based on validation performance feedback loops. Finally, we conducted comprehensive **Evaluation and Ablation Studies** using multiple metrics (mIoU, Dice Score, Precision, Recall, F1-Score) and systematic ablation of each component (memory optimization, MKPE, and contour-aware enhancement) to validate the contribution of each architectural element. The workflow concluded with thorough **Results Analysis** and documentation of findings, ensuring reproducibility and scientific rigor throughout the research process.
+
+---
